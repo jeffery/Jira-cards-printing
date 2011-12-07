@@ -1,0 +1,39 @@
+body {
+    width: 800px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+img.logo {
+
+}
+
+form {
+    padding: 15px;
+    border: 1px solid rgb(208, 208,208);
+}
+
+form div {
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+form label:not(.inline) {
+    display: block;
+    float: left;
+    clear: left;
+    width: 250px;
+}
+
+form input[type=text], form input[type=password] {
+    width: 300px;
+}
+
+form input[type=radio] {
+    margin-left: 10px;
+}
+
+.credits {
+    text-align: right;
+    font-size: 13px;
+}

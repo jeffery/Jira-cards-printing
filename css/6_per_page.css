@@ -1,0 +1,59 @@
+html, html body {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	width: 100%;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+table.all > tbody > tr > td {
+	vertical-align: top;
+	border: 1pt solid #EFEFEF;
+	width: 46%;
+	padding: 2%;
+}
+
+table.all > tbody > tr > td div.card-wrapper {
+	height: 7.85cm;
+	overflow: hidden;
+}
+
+
+table.card tr.summary td {
+	font-weight: bold;
+	font-size: 15pt;
+	padding-top: 10px;
+}
+
+table.card tr.description td, table.card tr.estimation td {
+	padding-top: 10px;
+}
+
+table.card tr td.meta {
+	width: 60%;
+}
+
+table.card tr td.meta span.priority,
+table.card tr td.meta span.version {
+	font-weight: bold;
+}
+
+table.card tr:first-child td {
+	vertical-align: middle;
+}
+
+table.card h1 {
+	margin: 0;
+	font-size: 20pt;
+}
+
+table.card tr.estimation td span.estimation {
+	font-weight: bold;
+}
+
+.page-break {
+	page-break-before: always;
+}
