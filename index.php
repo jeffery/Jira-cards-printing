@@ -1,6 +1,6 @@
 <?php
 
-const CREDENTIALS_EXPIRE_OFFSET = 2592000; // 1 month
+define( 'CREDENTIALS_EXPIRE_OFFSET', 2592000 ); // 1 month
 
 if(!empty($_POST['xml_url'])) {
 
@@ -23,13 +23,13 @@ if(!empty($_POST['xml_url'])) {
 
     switch($format) {
         case '6PerPage':
-            $docXSL = __DIR__.'/xsl/6_per_page.xslt';
+            $docXSL = dirname(__FILE__) . '/xsl/6_per_page.xslt';
             break;
         case '1PerPage':
-            $docXSL = __DIR__.'/xsl/1_per_page.xslt';
+            $docXSL = dirname(__FILE__) . '/xsl/1_per_page.xslt';
             break;
         case '1PerPageWithSubtasks':
-            $docXSL = __DIR__.'/xsl/1_per_page_with_subtasks.xslt';
+            $docXSL = dirname(__FILE__) . '/xsl/1_per_page_with_subtasks.xslt';
             break;
     }
 
